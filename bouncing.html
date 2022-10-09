@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bouncing ball animation</title>
+        <style>
+            .ball1{
+                width:150px;
+                height:150px;
+                display: inline-block;
+                background:red;
+                border-radius:100px;
+                animation-name:xyz;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes xyz{
+            from{
+                    transform: translate(0px,0px);
+            }
+            to{
+                transform:translate(0px,470px);
+            }
+        }
+            .ball2{
+                background: blue;
+                animation-delay: 0.3s;
+            }
+            .ball3{
+                background:darkcyan;
+                animation-delay: 0.6s;
+            }
+            .ball4{
+                background:green;
+                animation-delay: 0.9s;
+            }
+            
+            .ball5{
+                background:brown;
+                animation-delay: 0.6s;
+            }
+            .ball6{
+                background:rgb(47, 65, 12);
+                animation-delay: 0.3s;
+            }
+            .ball7{
+                background:darkorange;
+                animation-delay: 0.6s;
+            }
+            .ball8{
+                background:rgb(172, 164, 61);
+                animation-delay: 0.9s;
+            }
+            .ball9{
+                background:darkgoldenrod;
+                animation-delay: 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ball1"></div>
+        <div class="ball1 ball2"></div>
+        <div class="ball1 ball2 ball3"></div>
+        <div class="ball1 ball2 ball3 ball4"></div>
+        <div class="ball1 ball2 ball3 ball4 ball5"></div>
+        <div class="ball1 ball2 ball3 ball4 ball5 ball6"></div>
+        <div class="ball1 ball2 ball3 ball4 ball5 ball6 ball7 ball8"></div>
+        <div class="ball1 ball2 ball3 ball4 ball5 ball6 ball7 ball8 ball9"></div>       
+    </body>
+</html>
